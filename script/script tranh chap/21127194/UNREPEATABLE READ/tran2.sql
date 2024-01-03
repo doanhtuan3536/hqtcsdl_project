@@ -1,0 +1,5 @@
+USE QLNHAKHOA
+GO
+EXEC Sp_NV_LAYTHONGTINTK 'anhtuan', '123'
+
+	
