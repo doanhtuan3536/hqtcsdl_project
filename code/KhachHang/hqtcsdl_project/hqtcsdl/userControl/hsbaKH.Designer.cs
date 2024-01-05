@@ -30,12 +30,12 @@
         {
             this.button5 = new System.Windows.Forms.Button();
             this.dgvHSBA = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHSBA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +49,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Chi tiết";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dgvHSBA
             // 
@@ -57,15 +58,27 @@
             this.dgvHSBA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
+            this.column5,
             this.Column3,
-            this.Column4,
-            this.Column5});
+            this.Column4});
             this.dgvHSBA.Location = new System.Drawing.Point(43, 148);
             this.dgvHSBA.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHSBA.Name = "dgvHSBA";
             this.dgvHSBA.RowHeadersWidth = 51;
             this.dgvHSBA.Size = new System.Drawing.Size(907, 348);
             this.dgvHSBA.TabIndex = 4;
+            this.dgvHSBA.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHSBA_CellClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(395, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 31);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Hồ sơ bệnh án";
             // 
             // Column1
             // 
@@ -79,6 +92,12 @@
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             // 
+            // column5
+            // 
+            this.column5.HeaderText = "Mã nha sĩ";
+            this.column5.MinimumWidth = 6;
+            this.column5.Name = "column5";
+            // 
             // Column3
             // 
             this.Column3.HeaderText = "Họ tên người khám";
@@ -90,23 +109,6 @@
             this.Column4.HeaderText = "Số điện thoại người khám";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Tổng số dịch vụ sử dụng";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(395, 71);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 31);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Hồ sơ bệnh án";
             // 
             // hsbaKH
             // 
@@ -128,11 +130,11 @@
 
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridView dgvHSBA;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Label label1;
     }
 }

@@ -24,7 +24,11 @@ namespace hqtcsdl.userControl
 
         private void profileKH_Load(object sender, EventArgs e)
         {
-
+            usernameKH.Text = saveUserDetail.username;
+            hotenKH.Text = saveUserDetail.hoten;
+            diachiKH.Text = saveUserDetail.diachi;
+            ngaysinhKH.Text = saveUserDetail.ngaysinh;
+            sdtKH.Text = saveUserDetail.sdt;
         }
 
         private void label3_Click(object sender, EventArgs e)

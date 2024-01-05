@@ -117,6 +117,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Thoát";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button6
             // 
@@ -203,7 +204,7 @@
             this.panelContainer.Size = new System.Drawing.Size(992, 704);
             this.panelContainer.TabIndex = 8;
             // 
-            // Form1
+            // GiaoDienChinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -211,7 +212,7 @@
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
+            this.Name = "GiaoDienChinh";
             this.Text = "Khách hàng";
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);

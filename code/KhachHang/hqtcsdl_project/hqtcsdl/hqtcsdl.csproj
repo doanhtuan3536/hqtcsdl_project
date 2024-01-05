@@ -70,21 +70,21 @@
     <Compile Include="DatLichHen.Designer.cs">
       <DependentUpon>DatLichHen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="CThsba.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="CThsba.Designer.cs">
+      <DependentUpon>CThsba.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="XacNhanLH.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="XacNhanLH.Designer.cs">
+      <DependentUpon>XacNhanLH.cs</DependentUpon>
     </Compile>
-    <Compile Include="HSBA.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="saveUserDetail.cs" />
     <Compile Include="userControl\dslhKH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -115,11 +115,11 @@
     <EmbeddedResource Include="DatLichHen.resx">
       <DependentUpon>DatLichHen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="CThsba.resx">
+      <DependentUpon>CThsba.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="XacNhanLH.resx">
+      <DependentUpon>XacNhanLH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

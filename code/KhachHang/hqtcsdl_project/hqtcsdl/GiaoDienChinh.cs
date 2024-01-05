@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 //using static hqtcsdl.userControl.profileKH;
 
 namespace hqtcsdl
@@ -69,7 +70,7 @@ namespace hqtcsdl
             addUserControl(pf);
             myBtnSetting(btn_profile_KH, null);
         }
-
+        //SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-TD9TJMNG\SQLEXPRESS;Initial Catalog=QLNHAKHOA;Integrated Security=True");
         private void btn_dslh_KH_Click_1(object sender, EventArgs e)
         {
             dslhKH lh = new dslhKH();
@@ -82,6 +83,11 @@ namespace hqtcsdl
             hsbaKH hs = new hsbaKH();
             addUserControl(hs);
             myBtnSetting(btn_hsba_KH, null);
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
