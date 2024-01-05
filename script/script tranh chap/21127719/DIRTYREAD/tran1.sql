@@ -1,0 +1,4 @@
+USE QLNHAKHOA
+GO
+
+EXEC sp_themhs 'HSB123', 'KH001', 'NS001', '2024-01-05', 'Nguyen Van A', '12341234'
