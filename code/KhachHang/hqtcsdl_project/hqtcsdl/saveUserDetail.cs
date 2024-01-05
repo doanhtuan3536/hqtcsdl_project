@@ -8,12 +8,22 @@ namespace hqtcsdl
 {
     internal class saveUserDetail
     {
-        public static string idTK = "TK001";
-        public static string id = "KH001";
-        public static string username = "Trung Nguyen";
-        public static string hoten = "Trung Nguyen";
-        public static string ngaysinh = "1990-05-20";
-        public static string sdt = "123456789";
-        public static string diachi = "Hanoi";
+        public static string idTK = null;
+        public static string id = null;
+        public static string username = null;
+        public static string hoten = null;
+        public static string ngaysinh = null;
+        public static string sdt = null;
+        public static string diachi = null;
+        public static void resetInfo()
+        {
+            idTK = null;
+            id = null;
+            username = null;
+            hoten = null;
+            ngaysinh = null;
+            sdt = null;
+            diachi = null;
+        }
     }
 }

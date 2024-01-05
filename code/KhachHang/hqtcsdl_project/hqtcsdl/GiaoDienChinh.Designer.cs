@@ -133,6 +133,7 @@
             this.button6.TabIndex = 3;
             this.button6.Text = "Đăng xuất";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnPanel
             // 
@@ -203,6 +204,7 @@
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(992, 704);
             this.panelContainer.TabIndex = 8;
+            this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContainer_Paint);
             // 
             // GiaoDienChinh
             // 

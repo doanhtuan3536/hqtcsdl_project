@@ -27,26 +27,17 @@ namespace hqtcsdl.userControl
             DatLichHen f3 = new DatLichHen();
             f3.ShowDialog();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-TD9TJMNG\SQLEXPRESS;Initial Catalog=QLNHAKHOA;Integrated Security=True");
         private void dslhKH_Load(object sender, EventArgs e)
         {
-            conn.Open();
             string query = "select lh.NGAY, lh.GIO, lh.MANHASI, ns.HOTENNS, ns.SDTNS from LICHHEN lh join NHASI ns on ns.MANHASI = lh.MANHASI where MAKH='" + saveUserDetail.id+"'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
-            DataTable dtable = new DataTable();
-            sda.Fill(dtable);
+            
+            //SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+            DataTable dtable = ConnectDatabase.GetData(query);
             //string namerow = "MANHASI";
             if (dtable.Rows.Count > 0)
             {
                 foreach (DataRow dr in dtable.Rows)
                 {
-                    //string idNS = (string)dr[namerow];
-                    //string query2 = "select HOTENNS, SDTNS from NHASI where MANHASI='" + idNS + "'";
-                    //SqlDataAdapter sda2 = new SqlDataAdapter(query2, conn);
-                    //DataTable dtable2 = new DataTable();
-                    //sda2.Fill(dtable2);
-                    //DataRow mergedRow = dtable.NewRow();
-                    //mergedRow.ItemArray = dr.ItemArray.Concat(dtable2.Rows[0].ItemArray).ToArray();
                     dslhData.Rows.Add(dr.ItemArray);
                 }
             }

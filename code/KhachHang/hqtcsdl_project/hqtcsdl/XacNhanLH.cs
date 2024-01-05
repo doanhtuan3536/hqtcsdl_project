@@ -42,42 +42,25 @@ namespace hqtcsdl
         {
 
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-TD9TJMNG\SQLEXPRESS;Initial Catalog=QLNHAKHOA;Integrated Security=True");
         private void button1_Click(object sender, EventArgs e)
         {
-            //conn.Open();
-            //string query = "insert into LICHHEN(NGAY, GIO, MAKH, MANHASI, NHASIDAT) values (" + ngayhen + "," + giohen + "," + saveUserDetail.id +","+ mansi + ","  + 0 + ")";
-            //conn.Close();
             try
             {
-                conn.Open();
-
-                string query = "INSERT INTO LICHHEN (NGAY, GIO, MAKH, MANHASI, NHASIDAT) " +
-                               "VALUES (@Ngay, @Gio, @MaKH, @MaNhasi, @NhasiDat)";
-
-                SqlCommand cmd = new SqlCommand(query, conn);
-
-                // Assuming ngayhen, giohen, saveUserDetail.id, mansi are your variables
-                cmd.Parameters.AddWithValue("@Ngay", ngayhen);
-                cmd.Parameters.AddWithValue("@Gio", giohen);
-                cmd.Parameters.AddWithValue("@MaKH", saveUserDetail.id);
-                cmd.Parameters.AddWithValue("@MaNhasi", mansi);
-                cmd.Parameters.AddWithValue("@NhasiDat", 0);
-
-                int rowsAffected = cmd.ExecuteNonQuery();
-                if (rowsAffected > 0)
+                string query = "insert into LICHHEN(NGAY, GIO, MAKH, MANHASI, NHASIDAT) values ('" + ngayhen + "','" + giohen + "','" + saveUserDetail.id + "','" + mansi + "'," + '0' + ")";
+                int rowafftected = ConnectDatabase.InsertData(query);
+                if(rowafftected > 0)
                 {
-                    MessageBox.Show("Đặt lịch hẹn thành công");
+                    MessageBox.Show("Thêm lịch hẹn mới thành công");
                 }
             }
             catch (Exception ex)
             {
                 // Handle exceptions
+                //MessageBox.Show("Xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MessageBox.Show("Xảy ra lỗi, vui lòng kiểm tra lại thông tin hoặc thử lại");
             }
             finally
             {
-                conn.Close();
                 this.Close();
             }
         }

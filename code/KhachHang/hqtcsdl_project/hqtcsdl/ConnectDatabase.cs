@@ -25,9 +25,15 @@ namespace hqtcsdl
             sda.Fill(table);
             return table;
         }
+        public static int InsertData(string sql)
+        {
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            int rowsAffected = cmd.ExecuteNonQuery();
+            return rowsAffected;
+        }
         public static void Disconnect()
         {
-            if (connection.State == ConnectionState.Open)
+            if (connection != null && connection.State == ConnectionState.Open)
             {
                 connection.Close();
                 connection.Dispose();

@@ -17,14 +17,10 @@ namespace hqtcsdl.userControl
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-TD9TJMNG\SQLEXPRESS;Initial Catalog=QLNHAKHOA;Integrated Security=True");
         private void hsbaKH_Load(object sender, EventArgs e)
         {
-            conn.Open();
             string query = "select hs.IDHOSOBA, hs.NGAYKHAM, ns.MANHASI,ns.HOTENNS, ns.SDTNS from HOSOBENHAN hs join NHASI ns on ns.MANHASI = hs.MANHASI where MAKH='" + saveUserDetail.id + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
-            DataTable dtable = new DataTable();
-            sda.Fill(dtable);
+            DataTable dtable = ConnectDatabase.GetData(query);
             //string namerow = "MANHASI";
             if (dtable.Rows.Count > 0)
             {
@@ -33,7 +29,6 @@ namespace hqtcsdl.userControl
                     dgvHSBA.Rows.Add(dr.ItemArray);
                 }
             }
-            conn.Close();
 
         }
 

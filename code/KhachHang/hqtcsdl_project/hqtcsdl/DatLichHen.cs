@@ -31,7 +31,7 @@ namespace hqtcsdl
         {
 
         }
-        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-TD9TJMNG\SQLEXPRESS;Initial Catalog=QLNHAKHOA;Integrated Security=True");
+        //SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-TD9TJMNG\SQLEXPRESS;Initial Catalog=QLNHAKHOA;Integrated Security=True");
         private void LocNhaSi_Click(object sender, EventArgs e)
         {
             string datepick = ngayhen.Value.ToString("dd/MM/yyyy");
@@ -41,12 +41,8 @@ namespace hqtcsdl
             string time = giohen.Value.ToString("HH:mm");
             nhasiphuhop.Rows.Clear();
             nhasiphuhop.Refresh();
-            conn.Open();
             string query = "select ns.MANHASI, ns.HOTENNS, ns.NGAYSINHNS, ns.SDTNS, lns.NGAYTRONGTUAN, lns.GIOLAMVIEC, lns.GIOKETTHUC from LICHNHASI lns join NHASI ns on lns.MANHASI = ns.MANHASI where NGAYTRONGTUAN=" + weekdayAsInt + " and '" + time + "' between lns.GIOLAMVIEC and lns.GIOKETTHUC";
-            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
-            DataTable dtable = new DataTable();
-            sda.Fill(dtable);
-            //string namerow = "MANHASI";
+            DataTable dtable = ConnectDatabase.GetData(query);
             if (dtable.Rows.Count > 0)
             {
                 foreach (DataRow dr in dtable.Rows)
@@ -54,7 +50,6 @@ namespace hqtcsdl
                     nhasiphuhop.Rows.Add(dr.ItemArray);
                 }
             }
-            conn.Close();
         }
 
         private void DatLich_Click(object sender, EventArgs e)

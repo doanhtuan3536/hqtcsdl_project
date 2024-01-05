@@ -89,5 +89,20 @@ namespace hqtcsdl
         {
             Application.Exit();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DangNhap dn = new DangNhap();
+            ConnectDatabase.Disconnect();
+            saveUserDetail.resetInfo();
+            this.Hide();
+            dn.ShowDialog();
+            this.Close();
+        }
+
+        private void panelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
