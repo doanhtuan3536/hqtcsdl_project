@@ -1,0 +1,4 @@
+USE QLNHAKHOA
+GO
+
+EXEC sp_QTV_capnhatsl 'T009', '50'
