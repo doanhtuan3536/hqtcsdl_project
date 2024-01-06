@@ -137,6 +137,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ThemLichHen_NS";
             this.Text = "ThemLichHen_NS";
+            this.Load += new System.EventHandler(this.ThemLichHen_NS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

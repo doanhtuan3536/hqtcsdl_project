@@ -49,6 +49,9 @@ namespace HQTCSDL
             }
         }
 
-        
+        private void ThemLichHen_NS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
