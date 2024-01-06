@@ -1,4 +1,6 @@
 USE QLNHAKHOA
 GO
-EXEC Sp_NV_XOATAIKHOAN 'TK012','NV004'
+exec Sp_XOATAIKHOANKH 'TK004';
+
+--delete from taikhoan where matk = 'TK004'
 

@@ -21,7 +21,7 @@ BEGIN TRAN
 			WHERE tk.TENTK = @SDT AND tk.MATKHAU = @MatKhau
 		)
 		BEGIN
-			WAITFOR DELAY '00:00:10'
+			--WAITFOR DELAY '00:00:10'
 			SELECT @LoaiAcc = 0, @Ma = kh.MAKH, @MaTK = tk.MATK, @Trangthai = tk.TRANGTHAI
 			FROM TAIKHOAN tk
 			JOIN KHACHHANG kh ON tk.MATK = kh.MATK_KH
