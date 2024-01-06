@@ -8,7 +8,6 @@ D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.csproj.GenerateResour
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.csproj.CoreCompileInputs.cache
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.exe
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.pdb
-D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.Form2.resources
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.userControl.profileKH.resources
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.userControl.hsbaKH.resources
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.userControl.dslhKH.resources
