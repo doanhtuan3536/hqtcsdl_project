@@ -7,13 +7,16 @@
     <Compile Update="DSLichHen_NS.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GiaoDienChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SuaLichHen_NS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ThemLichHen_NS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form4.cs">
+    <Compile Update="DSHoso_NS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form5.cs">
