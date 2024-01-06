@@ -31,6 +31,11 @@ namespace hqtcsdl
             int rowsAffected = cmd.ExecuteNonQuery();
             return rowsAffected;
         }
+
+        //public static void TSQL(string sql)
+        //{
+
+        //}
         public static void Disconnect()
         {
             if (connection != null && connection.State == ConnectionState.Open)

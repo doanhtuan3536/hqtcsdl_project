@@ -18,3 +18,4 @@ D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.DatLichHen.resources
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.CThsba.resources
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.XacNhanLH.resources
 D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.DangNhap.resources
+D:\visual studio\hqtcsdl_project\hqtcsdl\obj\Debug\hqtcsdl.DangKi.resources

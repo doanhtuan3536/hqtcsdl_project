@@ -57,7 +57,7 @@ namespace hqtcsdl
             {
                 // Handle exceptions
                 //MessageBox.Show("Xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show("Xảy ra lỗi, vui lòng kiểm tra lại thông tin hoặc thử lại");
+                MessageBox.Show("Xảy ra lỗi, vui lòng kiểm tra lại thông tin hoặc thử lại. Có thể bạn đã thêm lịch hẹn này rồi");
             }
             finally
             {

@@ -92,11 +92,11 @@ namespace hqtcsdl
 
         private void button6_Click(object sender, EventArgs e)
         {
-            DangNhap dn = new DangNhap();
+            //DangNhap dn = new DangNhap();
             ConnectDatabase.Disconnect();
             saveUserDetail.resetInfo();
-            this.Hide();
-            dn.ShowDialog();
+            //this.Hide();
+            //dn.ShowDialog();
             this.Close();
         }
 

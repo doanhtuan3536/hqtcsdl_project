@@ -29,6 +29,10 @@ namespace hqtcsdl
         int trangthai = 0;
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+            LoaiAcc = -1;
+            ma = null;
+            matk = null;
+            trangthai = 0;
             string usern = txUsername.Text.Trim().ToString();
             string pass = txPass.Text.Trim().ToString();
 
@@ -107,8 +111,17 @@ namespace hqtcsdl
                 GiaoDienChinh gdkh = new GiaoDienChinh();
                 this.Hide();
                 gdkh.ShowDialog();
-                this.Close();
+                if(this != null && !this.IsDisposed)
+                    this.Show();
             }    
+        }
+
+        private void btndangki_Click(object sender, EventArgs e)
+        {
+            DangKi dk = new DangKi();
+            this.Hide();
+            dk.ShowDialog();
+            this.Show();
         }
     }
 }

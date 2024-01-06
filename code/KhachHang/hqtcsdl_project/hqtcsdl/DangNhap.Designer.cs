@@ -85,6 +85,7 @@
             this.txPass.Location = new System.Drawing.Point(56, 172);
             this.txPass.MaxLength = 40;
             this.txPass.Name = "txPass";
+            this.txPass.PasswordChar = '*';
             this.txPass.Size = new System.Drawing.Size(341, 28);
             this.txPass.TabIndex = 4;
             // 
@@ -121,6 +122,7 @@
             this.btndangki.TabIndex = 8;
             this.btndangki.Text = "Đăng kí";
             this.btndangki.UseVisualStyleBackColor = false;
+            this.btndangki.Click += new System.EventHandler(this.btndangki_Click);
             // 
             // DangNhap
             // 

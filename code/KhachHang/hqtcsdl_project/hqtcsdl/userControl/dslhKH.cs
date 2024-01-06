@@ -30,10 +30,7 @@ namespace hqtcsdl.userControl
         private void dslhKH_Load(object sender, EventArgs e)
         {
             string query = "select lh.NGAY, lh.GIO, lh.MANHASI, ns.HOTENNS, ns.SDTNS from LICHHEN lh join NHASI ns on ns.MANHASI = lh.MANHASI where MAKH='" + saveUserDetail.id+"'";
-            
-            //SqlDataAdapter sda = new SqlDataAdapter(query, conn);
             DataTable dtable = ConnectDatabase.GetData(query);
-            //string namerow = "MANHASI";
             if (dtable.Rows.Count > 0)
             {
                 foreach (DataRow dr in dtable.Rows)
