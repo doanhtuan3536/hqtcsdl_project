@@ -1,4 +1,4 @@
 use QLNHAKHOA
 go
 
-exec sp_NS_xemhs 'KH001'
+exec sp_KH_xemhs 'KH001'
